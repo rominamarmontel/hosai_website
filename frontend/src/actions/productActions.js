@@ -3,6 +3,7 @@ import {
     PRODUCT_LIST_SUCCESS,
     PRODUCT_LIST_FAIL
 } from '../constants/productConstants.js'
+import axios from 'axios'
 
 export const listProducts = () => async (dispathc) => {
     try {
