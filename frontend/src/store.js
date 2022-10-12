@@ -4,7 +4,7 @@ import { productListReducer, productDetailsReducer } from './reducers/productRed
 import { applyMiddleware } from 'redux'
 import { composeWithDevTools } from 'redux-devtools-extension'
 import { cartReducer } from './reducers/cartReducers'
-import { userLoginReducer } from './reducers/userReducers'
+import { userLoginReducer, userRegisterReducer } from './reducers/userReducers'
 
 
 
@@ -29,6 +29,7 @@ productList: productListReducer,
 productDetails: productDetailsReducer,
 cart: cartReducer,
 userLogin: userLoginReducer,
+userRegister: userRegisterReducer,
 }},
 initialState,
 composeWithDevTools(applyMiddleware(...middleware))
