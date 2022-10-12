@@ -1,30 +1,54 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import { Link } from 'react-router-dom'
 import { Button, Row, Col, ListGroup, Image, Card } from 'react-bootstrap'
-import { useSelector } from 'react-redux'
+import { useDispatch, useSelector } from 'react-redux'
 import Message from '../components/Message'
 import CheckoutSteps from '../components/CheckoutSteps'
+import { createOrder } from '../actions/orderActions'
 
-const PlaceOrderScreen = () => {
+const PlaceOrderScreen = ({ history }) => {
+  const dispatch = useDispatch()
+
   const cart = useSelector((state) => state.cart)
+  const orderCart = {}
 
   const addDecimals = (num) => {
     return Number((Math.round(num * 100) / 100).toFixed(2))
   }
 
-  cart.itemsPrice = addDecimals(
+  orderCart.itemsPrice = addDecimals(
     cart.cartItems.reduce((acc, item) => acc + item.price * item.qty, 0)
   )
-  cart.shippingPrice = addDecimals(cart.itemsPrice > 100 ? 0 : 100)
-  cart.taxPrice = addDecimals(Number((0.15 * cart.itemsPrice).toFixed(2)))
-  cart.totalPrice = (
-    Number(cart.itemsPrice) +
-    Number(cart.shippingPrice) +
-    Number(cart.taxPrice)
+  orderCart.shippingPrice = addDecimals(orderCart.itemsPrice > 100 ? 0 : 10)
+  orderCart.taxPrice = addDecimals(Number((0.15 * orderCart.itemsPrice).toFixed(2)))
+  orderCart.totalPrice = (
+    Number(orderCart.itemsPrice) +
+    Number(orderCart.shippingPrice) +
+    Number(orderCart.taxPrice)
   ).toFixed(2)
 
+  const orderCreate = useSelector((state) => state.orderCreate)
+  const { order, success, error } = orderCreate
+
+  useEffect(() => {
+    if (success) {
+      history.push(`/order/${order._id}`)
+    }
+    // eslint-disable-next-line
+  }, [history, success])
+
   const placeOrderHandler = () => {
-    console.log('order')
+    dispatch(
+      createOrder({
+        orderItems: cart.cartItems,
+        shippingAddress: cart.shippingAddress,
+        paymentMethod: cart.paymentMethod,
+        itemsPrice: orderCart.itemsPrice,
+        shippingPrice: orderCart.shippingPrice,
+        taxPrice: orderCart.taxPrice,
+        totalPrice: orderCart.totalPrice,
+      })
+    )
   }
 
   return (
@@ -91,26 +115,29 @@ const PlaceOrderScreen = () => {
               <ListGroup.Item>
                 <Row>
                   <Col>Items</Col>
-                  <Col>${cart.itemsPrice}</Col>
+                  <Col>${orderCart.itemsPrice}</Col>
                 </Row>
               </ListGroup.Item>
               <ListGroup.Item>
                 <Row>
                   <Col>Shipping</Col>
-                  <Col>${cart.shippingPrice}</Col>
+                  <Col>${orderCart.shippingPrice}</Col>
                 </Row>
               </ListGroup.Item>
               <ListGroup.Item>
                 <Row>
                   <Col>Tax</Col>
-                  <Col>${cart.taxPrice}</Col>
+                  <Col>${orderCart.taxPrice}</Col>
                 </Row>
               </ListGroup.Item>
               <ListGroup.Item>
                 <Row>
                   <Col>Total</Col>
-                  <Col>${cart.totalPrice}</Col>
+                  <Col>${orderCart.totalPrice}</Col>
                 </Row>
+              </ListGroup.Item>
+              <ListGroup.Item>
+                {error && <Message variant='danger'>{error}</Message>}
               </ListGroup.Item>
               <ListGroup.Item>
                 <Button
