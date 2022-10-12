@@ -8,6 +8,7 @@ import { userDetailsReducer,
         userLoginReducer, 
         userRegisterReducer, 
         userUpdateProfileReducer} from './reducers/userReducers'
+import { orderCreateReducer } from './reducers/orderReducers'
 
 
 
@@ -42,6 +43,7 @@ userLogin: userLoginReducer,
 userRegister: userRegisterReducer,
 userDetails: userDetailsReducer,
 userUpdateProfile: userUpdateProfileReducer,
+orderCreate: orderCreateReducer,
 }},
 initialState,
 composeWithDevTools(applyMiddleware(...middleware))

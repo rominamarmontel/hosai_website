@@ -1,16 +1,15 @@
-//import React, { useState } from 'react'
+import React from 'react'
 import { Link } from 'react-router-dom'
 import { Button, Row, Col, ListGroup, Image, Card } from 'react-bootstrap'
 import { useSelector } from 'react-redux'
 import Message from '../components/Message'
-import CheckoutShops from '../components/CheckoutShops'
+import CheckoutSteps from '../components/CheckoutSteps'
 
 const PlaceOrderScreen = () => {
-    const cart = useSelector((state) => state.cart)
-    
-   //   Calculate prices
-   const addDecimals = (num) => {
-    return (Math.round(num * 100) / 100).toFixed(2)
+  const cart = useSelector((state) => state.cart)
+
+  const addDecimals = (num) => {
+    return Number((Math.round(num * 100) / 100).toFixed(2))
   }
 
   cart.itemsPrice = addDecimals(
@@ -28,11 +27,10 @@ const PlaceOrderScreen = () => {
     console.log('order')
   }
 
-
   return (
     <>
-    <CheckoutShops step1 step2 step3 step4 />
-    <Row>
+      <CheckoutSteps step1 step2 step3 step4 />
+      <Row>
         <Col md={8}>
           <ListGroup variant='flush'>
             <ListGroup.Item>
