@@ -9,7 +9,7 @@ import { userDetailsReducer,
         userRegisterReducer, 
         userUpdateProfileReducer } from './reducers/userReducers'
 import { orderCreateReducer, 
-        orderDetailsReducer } from './reducers/orderReducers.js'
+        orderDetailsReducer } from './reducers/orderReducers'
 
 
 
