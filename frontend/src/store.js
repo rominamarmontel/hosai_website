@@ -7,8 +7,9 @@ import { cartReducer } from './reducers/cartReducers'
 import { userDetailsReducer, 
         userLoginReducer, 
         userRegisterReducer, 
-        userUpdateProfileReducer} from './reducers/userReducers'
-import { orderCreateReducer } from './reducers/orderReducers'
+        userUpdateProfileReducer } from './reducers/userReducers'
+import { orderCreateReducer, 
+        orderDetailsReducer } from './reducers/orderReducers.js'
 
 
 
@@ -44,6 +45,7 @@ userRegister: userRegisterReducer,
 userDetails: userDetailsReducer,
 userUpdateProfile: userUpdateProfileReducer,
 orderCreate: orderCreateReducer,
+orderDetails: orderDetailsReducer,
 }},
 initialState,
 composeWithDevTools(applyMiddleware(...middleware))
