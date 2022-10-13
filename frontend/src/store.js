@@ -9,7 +9,9 @@ import { userDetailsReducer,
         userRegisterReducer, 
         userUpdateProfileReducer } from './reducers/userReducers'
 import { orderCreateReducer, 
-        orderDetailsReducer } from './reducers/orderReducers'
+        orderDetailsReducer,
+        orderPayReducer,
+        orderListMyReducer } from './reducers/orderReducers'
 
 
 
@@ -46,6 +48,8 @@ userDetails: userDetailsReducer,
 userUpdateProfile: userUpdateProfileReducer,
 orderCreate: orderCreateReducer,
 orderDetails: orderDetailsReducer,
+orderPay: orderPayReducer,
+orderListMy: orderListMyReducer,
 }},
 initialState,
 composeWithDevTools(applyMiddleware(...middleware))
