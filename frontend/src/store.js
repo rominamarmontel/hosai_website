@@ -1,17 +1,23 @@
 import { configureStore } from '@reduxjs/toolkit'
 import thunk from 'redux-thunk'
-import { productListReducer, productDetailsReducer } from './reducers/productReducers.js'
 import { applyMiddleware } from 'redux'
 import { composeWithDevTools } from 'redux-devtools-extension'
 import { cartReducer } from './reducers/cartReducers'
-import { userDetailsReducer, 
+import { 
+        productListReducer, 
+        productDetailsReducer,
+        productDeletesReducer,
+        productCreateReducer, } from './reducers/productReducers.js'
+import { 
+        userDetailsReducer, 
         userLoginReducer, 
         userRegisterReducer, 
         userUpdateProfileReducer,
         userListReducer,
         userDeleteReducer,
         userUpdateReducer, } from './reducers/userReducers'
-import { orderCreateReducer, 
+import { 
+        orderCreateReducer, 
         orderDetailsReducer,
         orderPayReducer,
         orderListMyReducer } from './reducers/orderReducers'
@@ -44,6 +50,8 @@ const store = configureStore({
 reducer: {
 productList: productListReducer,
 productDetails: productDetailsReducer,
+productDelete: productDeletesReducer,
+productCreate: productCreateReducer,
 cart: cartReducer,
 userLogin: userLoginReducer,
 userRegister: userRegisterReducer,
