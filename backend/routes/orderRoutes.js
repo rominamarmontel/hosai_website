@@ -5,7 +5,8 @@ import {
     getOrderById, 
     updateOrderToPaid,
     updateOrderToDelivered,
-    getMyOrders } from '../controllers/orderController.js'
+    getMyOrders,
+    getOrders } from '../controllers/orderController.js'
 import { protect, admin } from '../middleware/authMiddleware.js'
 
 router.route('/')
