@@ -10,6 +10,7 @@ import {
         productCreateReducer,
         productUpdateReducer,
         productReviwCreateReducer,
+        productTopRatedReducer,
      } from './reducers/productReducers.js'
 import { 
         userDetailsReducer, 
@@ -58,6 +59,7 @@ productDetails: productDetailsReducer,
 productDelete: productDeletesReducer,
 productCreate: productCreateReducer,
 productUpdate: productUpdateReducer,
+productTopRated: productTopRatedReducer,
 productReviewCreate: productReviwCreateReducer,
 cart: cartReducer,
 userLogin: userLoginReducer,
