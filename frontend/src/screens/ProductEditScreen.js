@@ -124,9 +124,10 @@ const ProductEditScreen = ({ match, history }) => {
               ></Form.Control>
             </Form.Group>
 
-            <Form.Group controlId='image'>
-              <Form.Label>Image</Form.Label>
+            <Form.Group>
               <Form.Control
+                id='image'
+                label='Image'
                 type='text'
                 placeholder='Enter image url'
                 value={image}
