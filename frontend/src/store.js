@@ -8,7 +8,9 @@ import {
         productDetailsReducer,
         productDeletesReducer,
         productCreateReducer,
-        productUpdateReducer, } from './reducers/productReducers.js'
+        productUpdateReducer,
+        productReviwCreateReducer,
+     } from './reducers/productReducers.js'
 import { 
         userDetailsReducer, 
         userLoginReducer, 
@@ -56,6 +58,7 @@ productDetails: productDetailsReducer,
 productDelete: productDeletesReducer,
 productCreate: productCreateReducer,
 productUpdate: productUpdateReducer,
+productReviewCreate: productReviwCreateReducer,
 cart: cartReducer,
 userLogin: userLoginReducer,
 userRegister: userRegisterReducer,
