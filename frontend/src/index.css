@@ -1,8 +1,11 @@
+body {
+  text-align: center;
+}
 main {
     min-height: 80vh;
   }
-  
-  h3 {
+
+h3 {
     padding: 1rem 0;
   }
   
