@@ -6,6 +6,7 @@ import Message from '../components/Message'
 import Loader from '../components/Loader'
 import { getUserDetails, updateUserProfile } from '../actions/userActions'
 import { listMyOrders } from '../actions/orderActions'
+import { USER_UPDATE_PROFILE_RESET } from '../constants/userConstants'
 
 const ProfileScreen = ({ location, history }) => {
   const [name, setName] = useState('')
@@ -32,7 +33,8 @@ const ProfileScreen = ({ location, history }) => {
     if (!userInfo) {
       history.push('/login')
     } else {
-      if (!user.name) {
+      if (!user.name || !user.name || success) {
+        dispatch({ type: USER_UPDATE_PROFILE_RESET })
         dispatch(getUserDetails('profile'))
         dispatch(listMyOrders())
       } else {
@@ -40,7 +42,7 @@ const ProfileScreen = ({ location, history }) => {
         setEmail(user.email)
       }
     }
-  }, [dispatch, history, userInfo, user])
+  }, [dispatch, history, userInfo, user, user.name, success])
 
   const submitHandler = (e) => {
     e.preventDefault()
@@ -56,9 +58,13 @@ const ProfileScreen = ({ location, history }) => {
       <Col md={3}>
         <h2>User Profile</h2>
         {message && <Message variant='danger'>{message}</Message>}
-        {error && <Message variant='danger'>{error}</Message>}
+        {}
         {success && <Message variant='success'>Profile Updated</Message>}
-        {loading && <Loader />}
+        {loading ? (
+          <Loader />
+        ) : error ? (
+          <Message variant='danger'>{error}</Message>
+        ) : (
         <Form onSubmit={submitHandler}>
           <Form.Group controlId='name'>
             <Form.Label>Name</Form.Label>
@@ -81,7 +87,7 @@ const ProfileScreen = ({ location, history }) => {
           </Form.Group>
 
           <Form.Group controlId='password'>
-            <Form.Label>Password Address</Form.Label>
+            <Form.Label>Password</Form.Label>
             <Form.Control
               type='password'
               placeholder='Enter password'
@@ -104,6 +110,7 @@ const ProfileScreen = ({ location, history }) => {
             Update
           </Button>
         </Form>
+        )}
       </Col>
       <Col md={9}>
       <h2>My Orders</h2>

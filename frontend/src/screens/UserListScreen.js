@@ -24,11 +24,10 @@ const UserListScreen = ({ history }) => {
     } else {
       history.push('/login')
     }
-  }, [dispatch, history, userInfo, successDelete])
-
+  }, [dispatch, history, successDelete, userInfo])
 
   const deleteHandler = (id) => {
-    if (window.confirm('Are you sure?')) {
+    if (window.confirm('Are you sure')) {
       dispatch(deleteUser(id))
     }
   }

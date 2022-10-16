@@ -29,12 +29,9 @@ const UserEditScreen = ({ match, history }) => {
 
   useEffect(() => {
     if (successUpdate) {
-        dispatch({ type: USER_UPDATE_RESET })
-        history.push('/admin/userlist')
+      dispatch({ type: USER_UPDATE_RESET })
+      history.push('/admin/userlist')
     } else {
-      setName(user.name)
-      setEmail(user.email)
-      setIsAdmin(user.isAdmin)
       if (!user.name || user._id !== userId) {
         dispatch(getUserDetails(userId))
       } else {
@@ -43,7 +40,7 @@ const UserEditScreen = ({ match, history }) => {
         setIsAdmin(user.isAdmin)
       }
     }
-}, [dispatch, history, userId, user, successUpdate])
+  }, [dispatch, history, userId, user, successUpdate])
 
   const submitHandler = (e) => {
     e.preventDefault()

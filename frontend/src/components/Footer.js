@@ -4,13 +4,11 @@ import { Container, Row, Col } from 'react-bootstrap'
 const Footer = () => {
   return (
     <footer>
-        <Container>
-            <Row>
-                <Col className='text-center py-3'>
-                    Copyright &copy; HOSAI KANRAKU
-                </Col>
-            </Row>
-        </Container>
+      <Container>
+        <Row>
+          <Col className='text-center py-3'>Copyright &copy; HOSAI KANRAKU Website</Col>
+        </Row>
+      </Container>
     </footer>
   )
 }

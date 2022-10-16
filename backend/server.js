@@ -32,6 +32,9 @@ app.get('/api/config/paypal', (req, res) =>
   res.send(process.env.PAYPAL_CLIENT_ID)
 )
 
+app.use(notFound);
+app.use(errorHandler);
+
 const __dirname = path.resolve()
 app.use('/uploads', express.static(path.join(__dirname, '/uploads')))
 
@@ -46,9 +49,6 @@ if (process.env.NODE_ENV === 'production') {
     res.send('API is running....')
   })
 }
-
-app.use(notFound)
-app.use(errorHandler)
 
 const PORT = process.env.PORT || 5000
 

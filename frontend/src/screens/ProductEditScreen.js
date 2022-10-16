@@ -90,6 +90,7 @@ const ProductEditScreen = ({ match, history }) => {
       })
     )
   }
+
   return (
     <>
       <Link to='/admin/productlist' className='btn btn-light my-3'>
@@ -99,11 +100,12 @@ const ProductEditScreen = ({ match, history }) => {
         <h1>Edit Product</h1>
         {loadingUpdate && <Loader />}
         {errorUpdate && <Message variant='danger'>{errorUpdate}</Message>}
-        {loading 
-        ? <Loader /> 
-        : error 
-        ? <Message variant='danger'>{error}</Message>
-        : <Form onSubmit={submitHandler}>
+        {loading ? (
+          <Loader />
+        ) : error ? (
+          <Message variant='danger'>{error}</Message>
+        ) : (
+          <Form onSubmit={submitHandler}>
             <Form.Group controlId='name'>
               <Form.Label>Name</Form.Label>
               <Form.Control
@@ -124,22 +126,20 @@ const ProductEditScreen = ({ match, history }) => {
               ></Form.Control>
             </Form.Group>
 
-            <Form.Group>
+            <Form.Group controlId='image'>
+              <Form.Label>Image</Form.Label>
               <Form.Control
-                id='image'
-                label='Image'
                 type='text'
                 placeholder='Enter image url'
                 value={image}
                 onChange={(e) => setImage(e.target.value)}
               ></Form.Control>
-              <Form.Control
-                type="file"
-                id="image-file"
-                label='Choose File'
+              <Form.File
+                id='image-file'
+                label=''
                 custom
                 onChange={uploadFileHandler}
-              ></Form.Control>
+              ></Form.File>
               {uploading && <Loader />}
             </Form.Group>
 
@@ -182,14 +182,15 @@ const ProductEditScreen = ({ match, history }) => {
                 onChange={(e) => setDescription(e.target.value)}
               ></Form.Control>
             </Form.Group>
-
+            
             <Button type='submit' variant='primary'>
               Update
             </Button>
           </Form>
-        } 
+        )}
       </FormContainer>
     </>
   )
 }
+
 export default ProductEditScreen
