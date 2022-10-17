@@ -13,21 +13,24 @@ dotenv.config()
 connectDB()
 
 const importData = async () => {
-    try {
+    try {//deleteMany()：削除対象のデータが複数
         await Order.deleteMany()
         await Product.deleteMany()
         await User.deleteMany()
-
+        //take the user model and then import with id of 
+        //all products(productModel.js) where only have one admin
+        //you put an ES here and get the admin user from the array
         const createdUsers = await User.insertMany(users)
-
+        //to get the first item=the 1st itme in users.js
         const adminUser = createdUsers[0]._id
-        
+        //add the admin user to each one
         const sampleProducts = products.map(product => {
             return { ...product, user: adminUser }
         })
-
+        //with users and pass in the sample products 
+        //which sill be all the product data including admin user
         await Product.insertMany(sampleProducts)
-
+        
         console.log('Data Imported!'.green.inverse)
         process.exit()
     } catch (error) {
