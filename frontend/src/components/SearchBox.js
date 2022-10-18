@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
-import { Form, Button } from 'react-bootstrap'
+import { Form } from 'react-bootstrap'
+import '../index.css';
 
 const SearchBox = ({ history }) => {
   const [keyword, setKeyword] = useState('')
@@ -14,17 +15,15 @@ const SearchBox = ({ history }) => {
   }
 
   return (
-    <Form onSubmit={submitHandler} inline className='d-flex'>
+    <Form onSubmit={submitHandler} inline className='d-f_bar'>
       <Form.Control
+        className='d-f'
         type='text'
         name='q'
         onChange={(e) => setKeyword(e.target.value)}
-        placeholder='Search Products...'
-        className='mr-sm-2 ml-sm-5'
+        SearchIcon='true'
+        placeholder='Search'
       ></Form.Control>
-      <Button type='submit' variant='outline-success' className='p-2'>
-        Search
-      </Button>
     </Form>
   )
 }

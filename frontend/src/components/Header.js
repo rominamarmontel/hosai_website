@@ -5,6 +5,7 @@ import { LinkContainer } from 'react-router-bootstrap'
 import { Navbar, Nav, Container, NavDropdown } from 'react-bootstrap'
 import { logout } from '../actions/userActions'
 import SearchBox from './SearchBox'
+import logoImage from '../logo.jpg'
 
 const Header = () => {
   const dispatch = useDispatch()
@@ -21,7 +22,7 @@ const Header = () => {
     <Navbar bg='light' variant='light' expand='lg' collapseOnSelect>
       <Container>
         <LinkContainer to='/'>
-        <Navbar.Brand>HOSAI KANRAKU</Navbar.Brand>
+        <Navbar.Brand><img src={logoImage} alt="logo"></img>   HOSAI KANRAKU</Navbar.Brand>
         </LinkContainer>
         <Navbar.Toggle aria-controls='basic-navbar-nav' />
         <Navbar.Collapse id='basic-navbar-nav'>
@@ -60,14 +61,14 @@ const Header = () => {
                   </LinkContainer>
                 </NavDropdown>
               )}
+
               <Route render={({ history }) => <SearchBox history={history} />} />
-          </Nav>
+            </Nav>
         </Navbar.Collapse>
       </Container>
     </Navbar>
     </header>
   )
 }
-
 
 export default Header

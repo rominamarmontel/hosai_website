@@ -39,7 +39,6 @@ h1 {
     height: 400px;
     padding: 30px;
     margin: 40px;
-    border-radius: 50%;
     margin-left: auto;
     margin-right: auto;
   }
@@ -51,3 +50,32 @@ h1 {
       font-size: 2.5vw;
     }
   }
+
+.d-f{
+    display: flex;
+    justify-content: center;
+    margin-left: 10px;
+}
+.d-f{
+    display: flex;
+    padding: 5px;
+    border: 0.5px solid lightgray;
+    border-radius: 999px;
+    background-color: #f0f2f5;
+}
+.d-f__bar > input {
+    border: none !important;
+    background-color: #f0f2f5;
+}
+
+.d-f__bar > input:focus {
+    outline-width: 0;
+}
+
+.d-f__bar > input::placeholder{
+    text-align: left;
+    font-size: 15px;
+}
+.sd-f__bar > .MuiSvgIcon-root {
+    margin-right: 5px;
+}
