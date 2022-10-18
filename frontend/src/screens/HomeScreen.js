@@ -19,7 +19,8 @@ const HomeScreen = ({ match }) => {
 
   const productList = useSelector((state) => state.productList)
   const { loading, error, products, page, pages } = productList
-
+  //useEffect hook to make a request to backend
+  //we want these products as soon as the component loads
   useEffect(() => {
     dispatch(listProducts(keyword, pageNumber))
   }, [dispatch, keyword, pageNumber])
