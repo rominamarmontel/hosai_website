@@ -23,7 +23,7 @@ const Header = () => {
         <Container>
           <LinkContainer to="/">
             <Navbar.Brand>
-              <img src={logoImage} alt="logo"></img>
+              <img src={logoImage} alt="logo" width={"389"} height={"52"}></img>
             </Navbar.Brand>
           </LinkContainer>
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
