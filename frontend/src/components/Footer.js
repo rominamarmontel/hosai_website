@@ -4,14 +4,14 @@ import { LinkContainer } from "react-router-bootstrap";
 
 const Footer = () => {
   return (
-    <footer>
+    <footer className="border-top pt-3">
       <Container>
         <LinkContainer to="/">
           <i className="bi bi-facebook"></i>
         </LinkContainer>
         <Row>
-          <Col className="text-center py-5">
-            Copyright &copy; KANRAKU HOSAI Website
+          <Col className="text-center pb-0">
+            <h4>Copyright &copy; KANRAKU HOSAI Website</h4>
           </Col>
         </Row>
       </Container>
