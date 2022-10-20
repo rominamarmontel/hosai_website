@@ -5,7 +5,7 @@ import { LinkContainer } from "react-router-bootstrap";
 import { Navbar, Nav, Container, NavDropdown } from "react-bootstrap";
 import { logout } from "../actions/userActions";
 import SearchBox from "./SearchBox";
-import logoImage from "../logo.png";
+import logoImage from "../logo1.png";
 
 const Header = () => {
   const dispatch = useDispatch();
@@ -21,7 +21,6 @@ const Header = () => {
     <header>
       <Navbar
         className="my-navbar"
-        bg="light"
         variant="light"
         expand="lg"
         collapseOnSelect
@@ -35,6 +34,11 @@ const Header = () => {
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="ms-auto">
+              <Nav className="form-inline ml-auto">
+                <Nav.Link href="#home">About</Nav.Link>
+                <Nav.Link href="#features">Estimation</Nav.Link>
+                <Nav.Link href="#pricing">Contact</Nav.Link>
+              </Nav>
               <LinkContainer to="/cart">
                 <Nav.Link>
                   <i className="fas fa-shopping-cart"></i> Cart

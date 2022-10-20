@@ -1,0 +1,33 @@
+:root {
+    --white-color: #ffffff;
+    --lightgray-color: #e6e6e6;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    background: white;
+    color: white;
+    height: 100px;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+  }
+ 
+header .logo h3 {
+    margin: 0;
+    padding: 0;
+    color: white;
+  }
+
+nav ul {
+    margin: 0;
+    padding: 0;
+  }
+  
+nav ul li {
+    list-style: none;
+    display: inline-block;
+    margin-right: 30px;
+  }
