@@ -6,7 +6,7 @@
 
 header {
     display: flex;
-    justify-content: space-around;
+    justify-content: flex-start;
     align-items: center;
     width: 100%;
     background: white;
@@ -22,7 +22,9 @@ header .logo h3 {
     padding: 0;
     color: white;
   }
-
+searchbox {
+  justify-content: flex-end;
+}
 nav ul {
     margin: 0;
     padding: 0;

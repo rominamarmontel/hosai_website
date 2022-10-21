@@ -34,23 +34,22 @@ const Header = () => {
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="ms-auto">
-              <Nav className="form-inline ml-auto">
-                <LinkContainer to="/about">
-                  <Nav.Link>About</Nav.Link>
-                </LinkContainer>
-                <LinkContainer to="/estimate">
-                  <Nav.Link>Estimate</Nav.Link>
-                </LinkContainer>
-                <LinkContainer to="/eshop">
-                  <Nav.Link>e-shop</Nav.Link>
-                </LinkContainer>
-                <LinkContainer to="/contact">
-                  <Nav.Link>Contact</Nav.Link>
-                </LinkContainer>
-              </Nav>
+              <LinkContainer to="/about">
+                <Nav.Link>About</Nav.Link>
+              </LinkContainer>
+              <LinkContainer to="/estimate">
+                <Nav.Link>Estimate</Nav.Link>
+              </LinkContainer>
+              <LinkContainer to="/eshop">
+                <Nav.Link>Shop</Nav.Link>
+              </LinkContainer>
+              <LinkContainer to="/contact">
+                <Nav.Link>Contact</Nav.Link>
+              </LinkContainer>
+
               <LinkContainer to="/cart">
                 <Nav.Link>
-                  <i className="fas fa-shopping-cart"></i> Cart
+                  <i className="fas fa-shopping-cart"></i>
                 </Nav.Link>
               </LinkContainer>
               {userInfo ? (
@@ -65,7 +64,7 @@ const Header = () => {
               ) : (
                 <LinkContainer to="/login">
                   <Nav.Link>
-                    <i className="fas fa-user"></i> Sign In
+                    <i className="fas fa-user"></i>
                   </Nav.Link>
                 </LinkContainer>
               )}
@@ -82,7 +81,8 @@ const Header = () => {
                   </LinkContainer>
                 </NavDropdown>
               )}
-
+            </Nav>
+            <Nav className="ml-3">
               <Route
                 render={({ history }) => <SearchBox history={history} />}
               />

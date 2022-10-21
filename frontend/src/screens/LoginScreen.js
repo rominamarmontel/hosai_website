@@ -41,11 +41,11 @@ const LoginScreen = ({ location, history }) => {
         </Col>
         <Col md={8}>
           <h6>
-            <strong> / Sign In</strong>
+            <strong> / Login</strong>
           </h6>
         </Col>
         <h7>
-          <strong>Sign In</strong>
+          <strong>Login</strong>
         </h7>
       </Row>
       <Row>
@@ -75,7 +75,7 @@ const LoginScreen = ({ location, history }) => {
             </Form.Group>
 
             <Button className="my-3" type="submit" variant="primary">
-              Sign In
+              Login
             </Button>
           </Form>
 
