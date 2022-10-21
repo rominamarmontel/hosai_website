@@ -35,9 +35,18 @@ const Header = () => {
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="ms-auto">
               <Nav className="form-inline ml-auto">
-                <Nav.Link href="#home">About</Nav.Link>
-                <Nav.Link href="#features">Estimation</Nav.Link>
-                <Nav.Link href="#pricing">Contact</Nav.Link>
+                <LinkContainer to="/about">
+                  <Nav.Link>About</Nav.Link>
+                </LinkContainer>
+                <LinkContainer to="/estimate">
+                  <Nav.Link>Estimate</Nav.Link>
+                </LinkContainer>
+                <LinkContainer to="/eshop">
+                  <Nav.Link>e-shop</Nav.Link>
+                </LinkContainer>
+                <LinkContainer to="/contact">
+                  <Nav.Link>Contact</Nav.Link>
+                </LinkContainer>
               </Nav>
               <LinkContainer to="/cart">
                 <Nav.Link>
