@@ -44,9 +44,9 @@ const LoginScreen = ({ location, history }) => {
             <strong> / Login</strong>
           </h6>
         </Col>
-        <h7>
+        <h5>
           <strong>Login</strong>
-        </h7>
+        </h5>
       </Row>
       <Row>
         <Col md={3}></Col>

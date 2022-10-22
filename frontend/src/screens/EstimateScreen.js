@@ -21,9 +21,9 @@ const EstimateScreen = () => {
               <strong> / Estimate</strong>
             </h6>
           </Col>
-          <h7>
+          <h5>
             <strong>Estimate</strong>
-          </h7>
+          </h5>
         </Row>
         <Row>
           <Col md={1}></Col>

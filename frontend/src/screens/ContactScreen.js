@@ -48,9 +48,9 @@ const ContactScreen = ({ location, history }) => {
           <h6>
             <strong> / Contact</strong>
           </h6>
-          <h7>
+          <h5>
             <strong>Contact</strong>
-          </h7>
+          </h5>
         </Col>
       </Row>
       <Row>
@@ -63,7 +63,7 @@ const ContactScreen = ({ location, history }) => {
             <Form.Group controlId="contactName">
               <Form.Label>Name</Form.Label>
               <Form.Control
-                type="contactName"
+                type="name"
                 placeholder="Enter name"
                 value={contactName}
                 onChange={(e) => setContactName(e.target.value)}
@@ -73,7 +73,7 @@ const ContactScreen = ({ location, history }) => {
             <Form.Group controlId="contactEmail">
               <Form.Label>Email Address</Form.Label>
               <Form.Control
-                type="contactEmail"
+                type="email"
                 placeholder="Email Address"
                 value={contactEmail}
                 onChange={(e) => setContactEmail(e.target.value)}
@@ -83,15 +83,18 @@ const ContactScreen = ({ location, history }) => {
             <Form.Group controlId="contactMessage">
               <Form.Label>Message</Form.Label>
               <Form.Control
-                type="contactMessage"
+                as="textarea"
+                rows={5}
+                type="submit"
                 placeholder="Message"
                 value={contactMessage}
+                row="10"
                 onChange={(e) => setContactMessage(e.target.value)}
               ></Form.Control>
             </Form.Group>
 
             <Button className="my-3" type="submit" variant="primary">
-              Register
+              Send
             </Button>
           </Form>
 

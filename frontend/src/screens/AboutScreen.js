@@ -21,9 +21,9 @@ const AboutScreen = () => {
               <strong> / About</strong>
             </h6>
           </Col>
-          <h7>
+          <h5>
             <strong>About</strong>
-          </h7>
+          </h5>
         </Row>
         <Row>
           <Col md={1}></Col>

@@ -53,9 +53,9 @@ const CartScreen = ({ match, location, history }) => {
             <strong> / Cart</strong>
           </h6>
         </Col>
-        <h7>
+        <h5>
           <strong>Shopping Cart</strong>
-        </h7>
+        </h5>
       </Row>
       <Row className="container text-left">
         <Col md={3}></Col>
