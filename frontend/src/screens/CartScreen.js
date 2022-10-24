@@ -40,25 +40,33 @@ const CartScreen = ({ match, location, history }) => {
 
   return (
     <FormContainer>
-      <br></br>
-      <br></br>
-      <Row className="container text-left">
+      <Row className="container text-left mx-auto">
         <Col md={1}>
-          <Link className="my-6" to="/" style={{ textDecoration: "none" }}>
-            <h6>Accueil</h6>
+          <Link to="/">
+            <p>Accueil</p>
           </Link>
         </Col>
-        <Col md={2}>
-          <h6>
-            <strong> / Cart</strong>
-          </h6>
+        <Col md={11}>
+          <p>
+            <strong> Cart</strong>
+          </p>
         </Col>
-        <h5>
-          <strong>Shopping Cart</strong>
-        </h5>
       </Row>
+      <Row>
+        <Col md={10}>
+          <h1>
+            <strong>Cart</strong>
+          </h1>
+        </Col>
+        <Col md={2}>
+          <i class="fa-brands fa-facebook-f px-2 pt-5 fa-lg size"></i>
+          <i class="fa-brands fa-twitter px-2 fa-lg size"></i>
+          <i class="fa-brands fa-youtube px-2 fa-lg size"></i>
+          <i class="fa-brands fa-square-instagram px-2 fa-lg size"></i>
+        </Col>
+      </Row>
+
       <Row className="container text-left">
-        <Col md={3}></Col>
         <Col md={6}>
           <p>Your cart is ...</p>
           {cartItems.length === 0 ? (
@@ -113,10 +121,10 @@ const CartScreen = ({ match, location, history }) => {
           <Card>
             <ListGroup variant="flush">
               <ListGroup.Item>
-                <h2>
+                <h3>
                   Subtotal ({cartItems.reduce((acc, item) => acc + item.qty, 0)}
                   ) items
-                </h2>
+                </h3>
                 €
                 {cartItems
                   .reduce((acc, item) => acc + item.qty * item.price, 0)

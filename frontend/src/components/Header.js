@@ -31,27 +31,34 @@ const Header = () => {
               <img src={logoImage} alt="logo" width={"389"} height={"52"}></img>
             </Navbar.Brand>
           </LinkContainer>
+
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">
-            <Nav className="ms-auto">
-              <LinkContainer to="/about">
-                <Nav.Link>About</Nav.Link>
-              </LinkContainer>
-              <LinkContainer to="/estimate">
-                <Nav.Link>Estimate</Nav.Link>
-              </LinkContainer>
-              <LinkContainer to="/eshop">
-                <Nav.Link>Shop</Nav.Link>
-              </LinkContainer>
-              <LinkContainer to="/contact">
-                <Nav.Link>Contact</Nav.Link>
-              </LinkContainer>
-
-              <LinkContainer to="/cart">
-                <Nav.Link>
-                  <i className="fas fa-shopping-cart"></i>
+            <Nav className="justify-content-end pt-2" activeKey="/">
+              <Nav.Item>
+                <Nav.Link href="/about">
+                  <h3 className="headerLists">About</h3>
                 </Nav.Link>
-              </LinkContainer>
+              </Nav.Item>
+              <Nav.Item>
+                <Nav.Link href="/estimate">
+                  <h3 className="headerLists">Estimate</h3>
+                </Nav.Link>
+              </Nav.Item>
+              <Nav.Item>
+                <Nav.Link href="/eshop">
+                  <h3 className="headerLists">Store</h3>
+                </Nav.Link>
+              </Nav.Item>
+              <Nav.Item>
+                <Nav.Link href="/contact">
+                  <h3 className="headerLists">Contact</h3>
+                </Nav.Link>
+              </Nav.Item>
+
+              <Nav.Link href="/cart">
+                <i className="fas fa-shopping-cart mt-3 size"></i>
+              </Nav.Link>
               {userInfo ? (
                 <NavDropdown title={userInfo.name} id="username">
                   <LinkContainer to="/profile">
@@ -64,7 +71,7 @@ const Header = () => {
               ) : (
                 <LinkContainer to="/login">
                   <Nav.Link>
-                    <i className="fas fa-user"></i>
+                    <i className="fas fa-user mt-3 mx-3 size"></i>
                   </Nav.Link>
                 </LinkContainer>
               )}
@@ -79,15 +86,16 @@ const Header = () => {
                   <LinkContainer to="/admin/orderlist">
                     <NavDropdown.Item>Orders</NavDropdown.Item>
                   </LinkContainer>
+                  <LinkContainer to="/admin/topiclist">
+                    <NavDropdown.Item>Topics</NavDropdown.Item>
+                  </LinkContainer>
                 </NavDropdown>
               )}
             </Nav>
-            <Nav className="ml-3">
-              <Route
-                render={({ history }) => <SearchBox history={history} />}
-              />
-            </Nav>
           </Navbar.Collapse>
+          <Nav>
+            <Route render={({ history }) => <SearchBox history={history} />} />
+          </Nav>
         </Container>
       </Navbar>
     </header>

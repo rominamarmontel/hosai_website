@@ -24,11 +24,32 @@ const EshopScreen = ({ match }) => {
 
   return (
     <>
-      <Meta />
-      <Link to="/" className="btn btn-light">
-        Go Back
-      </Link>
-      <h1>Latest Products</h1>
+      <Row className="container text-left mx-auto">
+        <Col md={1}>
+          <Link to="/">
+            <p>Accueil</p>
+          </Link>
+        </Col>
+        <Col md={11}>
+          <p>
+            <strong> Store</strong>
+          </p>
+        </Col>
+      </Row>
+      <Row>
+        <Col md={10}>
+          <h1>
+            <strong>Store</strong>
+          </h1>
+        </Col>
+        <Col md={2}>
+          <i className="fa-brands fa-facebook-f px-2 pt-5 fa-lg size"></i>
+          <i className="fa-brands fa-twitter px-2 fa-lg size"></i>
+          <i className="fa-brands fa-youtube px-2 fa-lg size"></i>
+          <i className="fa-brands fa-square-instagram px-2 fa-lg size"></i>
+        </Col>
+      </Row>
+
       {loading ? (
         <Loader />
       ) : error ? (
@@ -36,6 +57,7 @@ const EshopScreen = ({ match }) => {
       ) : (
         <>
           <Row>
+            <Meta title="STORE" />
             {products.map((product) => (
               <Col key={product._id} sm={12} md={6} lg={4} xl={3}>
                 <Product product={product} />

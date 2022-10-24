@@ -24,7 +24,7 @@ const Product = ({ product }) => {
           />
         </Card.Text>
 
-        <Card.Text as="h1">€{product.price}</Card.Text>
+        <Card.Text as="h4">€{product.price}</Card.Text>
       </Card.Body>
     </Card>
   );
