@@ -5,7 +5,6 @@ import { LinkContainer } from "react-router-bootstrap";
 import { Navbar, Nav, Container, NavDropdown } from "react-bootstrap";
 import { logout } from "../actions/userActions";
 import SearchBox from "./SearchBox";
-import logoImage from "../logo1.png";
 
 const Header = () => {
   const dispatch = useDispatch();
@@ -28,7 +27,12 @@ const Header = () => {
         <Container>
           <LinkContainer to="/">
             <Navbar.Brand>
-              <img src={logoImage} alt="logo" width={"389"} height={"52"}></img>
+              <img
+                src={process.env.PUBLIC_URL + "/images/logo1.png"}
+                alt="logo"
+                width={"389"}
+                height={"52"}
+              ></img>
             </Navbar.Brand>
           </LinkContainer>
 

@@ -3,12 +3,19 @@
   margin: 0;
   padding: 0;
 }
+.container { 
+  padding-right: 15px; 
+  padding-left: 15px; 
+  margin-right: auto; 
+  margin-left: auto; 
+} 
 body {
   background: white;
   font-family: 'MaisonNeueExtendedTRIAL-Book', sans-serif;
   letter-spacing: -0.01em;
   color: black;
 }
+
 @font-face {
   font-family: 'MaisonNeueExtendedTRIAL-Bold';
   src: url('./MaisonNeueExtendedTRIAL-Bold.otf') format(‘opentype‘);
@@ -20,10 +27,13 @@ body {
   }
 
 header {
+  min-width: 960px;
     display: flex;
     justify-content: flex-start;
     align-items: center;
     width: auto;
+    margin: 0;
+    padding: 0;
     background: white;
     color: white;
     height: 100px;
@@ -31,13 +41,14 @@ header {
     z-index: 999;
   }
  
-header .logo h3 {
-    margin: 0;
+header .logo {
+    margin-left: 0;
     padding: 0;
     color: white;
   }
 
 footer {
+  min-width: 960px;
   font-family: 'MaisonNeueExtendedTRIAL-Book', sans-serif;
   letter-spacing: -0.01em;
   color: black;
@@ -46,3 +57,21 @@ footer {
 nav.item :hover {
   color:white
 }
+
+@media (min-width: 768px) { 
+  .container { 
+      width: 750px; 
+      } 
+  } 
+
+@media (min-width: 992px) { 
+  .container { 
+      width: 970px; 
+      } 
+  } 
+
+@media (min-width: 1200px) { 
+  .container { 
+      width: 1170px; 
+      } 
+  }

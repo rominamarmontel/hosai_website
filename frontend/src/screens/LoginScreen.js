@@ -56,10 +56,10 @@ const LoginScreen = ({ location, history }) => {
             </h1>
           </Col>
           <Col md={2}>
-            <i class="fa-brands fa-facebook-f px-2 pt-5 fa-lg size"></i>
-            <i class="fa-brands fa-twitter px-2 fa-lg size"></i>
-            <i class="fa-brands fa-youtube px-2 fa-lg size"></i>
-            <i class="fa-brands fa-square-instagram px-2 fa-lg size"></i>
+            <i className="fa-brands fa-facebook-f px-2 pt-5 fa-lg size"></i>
+            <i className="fa-brands fa-twitter px-2 fa-lg size"></i>
+            <i className="fa-brands fa-youtube px-2 fa-lg size"></i>
+            <i className="fa-brands fa-square-instagram px-2 fa-lg size"></i>
           </Col>
         </Row>
         <>
