@@ -38,7 +38,7 @@ const AboutScreen = () => {
           <Meta title="About KANRAKU HOSAI" />
           <Row className="container text-left pt-3 mx-auto">
             <Col md={6}>
-              <img src={aboutImage} alt="about"></img>
+              <img src={aboutImage} alt="about" height={500} width={1000}></img>
             </Col>
             <Col md={3}></Col>
             <Col md={3}></Col>

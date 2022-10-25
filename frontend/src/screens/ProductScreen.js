@@ -67,7 +67,7 @@ const ProductScreen = ({ history, match }) => {
 
   return (
     <>
-      <Link className="btn btn-light my-3" to="/">
+      <Link className="btn btn-light my-3" to="/eshop">
         Go Back
       </Link>
       {loading ? (
@@ -77,28 +77,30 @@ const ProductScreen = ({ history, match }) => {
       ) : (
         <>
           <Meta title={product.name} />
+          <Row>
+            <ListGroup.Item>
+              <h1>{product.name}</h1>
+            </ListGroup.Item>
+          </Row>
           <Row className="productImage">
             <Col md={6}>
               <Image
                 src={product.image}
                 alt={product.name}
-                width="840"
-                height="510"
+                height={510}
+                width={840}
                 fluid
               />
             </Col>
             <Col md={3}>
               <ListGroup variant="flush">
                 <ListGroup.Item>
-                  <h3>{product.name}</h3>
-                </ListGroup.Item>
-                <ListGroup.Item>
                   <Rating
                     value={product.rating}
                     text={`${product.numReviews} reviews`}
                   />
                 </ListGroup.Item>
-                <ListGroup.Item>Price: €{product.price}</ListGroup.Item>
+                <ListGroup.Item>Price: {product.price}€</ListGroup.Item>
                 <ListGroup.Item>
                   Description: {product.description}
                 </ListGroup.Item>
@@ -111,7 +113,7 @@ const ProductScreen = ({ history, match }) => {
                     <Row>
                       <Col>Price:</Col>
                       <Col>
-                        <strong>€{product.price}</strong>
+                        <strong>{product.price}€</strong>
                       </Col>
                     </Row>
                   </ListGroup.Item>

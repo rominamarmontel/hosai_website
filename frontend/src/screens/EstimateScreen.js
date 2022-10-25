@@ -38,7 +38,12 @@ const EstimateScreen = () => {
           <Meta title="Estimate" />
           <Row className="container text-left pt-3 mx-auto">
             <Col md={6}>
-              <img src={estimateImage} alt="estimate"></img>
+              <img
+                src={estimateImage}
+                alt="estimate"
+                height={500}
+                width={1000}
+              ></img>
             </Col>
             <Col md={3}></Col>
             <Col md={3}></Col>

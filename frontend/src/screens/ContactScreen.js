@@ -65,6 +65,10 @@ const ContactScreen = () => {
           <div className="container text-left" md={6}>
             <Form onSubmit={sendEmail}>
               <div className="col-8 form.group mx-auto">
+                <div className="contactMe">
+                  If you have any question, <br></br>Please contact me!!
+                </div>
+                <br></br>
                 <Form.Label>Name</Form.Label>
                 <Form.Control
                   type="text"
@@ -74,7 +78,7 @@ const ContactScreen = () => {
                 />
               </div>
 
-              <div className="col-8 form-group pt-2 mx-auto">
+              <div className="col-8 form-group pt-3 mx-auto">
                 <Form.Label>Email Address</Form.Label>
                 <input
                   type="email"
@@ -83,7 +87,7 @@ const ContactScreen = () => {
                   name="email"
                 />
               </div>
-              <div className="col-8 form-group pt-2 mx-auto">
+              <div className="col-8 form-group pt-3 mx-auto">
                 <Form.Label>Your Message</Form.Label>
                 <textarea
                   className="form-control"
@@ -93,7 +97,7 @@ const ContactScreen = () => {
                   name="message"
                 ></textarea>
               </div>
-              <div className="col-8 pt-3 mx-auto">
+              <div className="col-8 pt-4 mx-auto">
                 <input
                   type="submit"
                   className="btn btn-info"
@@ -104,21 +108,34 @@ const ContactScreen = () => {
           </div>
         </Col>
         <Col md={6}>
-          <Row className="container text-left mx-10">
-            <Col md={4} py-25>
-              Company Name :
-            </Col>
-            <Col md={8} py-25>
-              KANRAKU HOSAI
-            </Col>
-          </Row>
-          <Row className="container text-left mx-10">
-            <Col md={4}>Address :</Col>
-            <Col md={8}>Tokyo Mejiroku Iidabashi</Col>
-          </Row>
-          <Row className="container text-left mx-10">
-            <Col md={4}>Tel :</Col>
-            <Col md={8}>03-1234-5678</Col>
+          <Row className="container text-left">
+            <div className="contactMe">Company Information</div>
+
+            <Row className="container text-left pt-3 mx-auto">
+              <Col md={4}>Company Name :</Col>
+              <Col md={8}>NAGASE KIKAKU</Col>
+            </Row>
+
+            <Row className="container text-left pt-3 mx-auto">
+              <Col md={4}>Address :</Col>
+              <Col md={8}>1-8-3-203 IIDABASHI CHIYODAKU TOKYO</Col>
+            </Row>
+            <Row className="container text-left pt-3 mx-auto">
+              <Col md={4}>Tel :</Col>
+              <Col md={8}>03-1234-5678</Col>
+            </Row>
+            <Row className="pt-3 mx-auto">
+              <iframe
+                title="googleMap for NAGASE KIKAKU"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3240.0898386525987!2d139.7460867152472!3d35.69940678019012!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188c419ddc654f%3A0x6d05ebb51f310234!2z5pel5pys44CB44CSMTAyLTAwNzIg5p2x5Lqs6YO95Y2D5Luj55Sw5Yy66aOv55Sw5qmL77yR5LiB55uu77yY4oiS77yT!5e0!3m2!1sja!2sfr!4v1666716737155!5m2!1sja!2sfr"
+                width="400"
+                height="300"
+                style={{ border: 0 }}
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+              ></iframe>
+            </Row>
           </Row>
           <Row></Row>
         </Col>

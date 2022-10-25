@@ -28,6 +28,13 @@ import {
   orderListMyReducer,
   orderListReducer,
 } from "./reducers/orderReducers";
+import {
+  topicListReducer,
+  topicDetailsReducer,
+  topicDeleteReducer,
+  topicCreateReducer,
+  topicUpdateReducer,
+} from "./reducers/topicReducers";
 
 const cartItemsFromStorage = localStorage.getItem("cartItems")
   ? JSON.parse(localStorage.getItem("cartItems"))
@@ -74,6 +81,11 @@ const store = configureStore(
       orderDeliver: orderDeliverReducer,
       orderListMy: orderListMyReducer,
       orderList: orderListReducer,
+      topicList: topicListReducer,
+      topicDetails: topicDetailsReducer,
+      topicDelete: topicDeleteReducer,
+      topicCreate: topicCreateReducer,
+      topicUpdate: topicUpdateReducer,
     },
   },
   initialState,

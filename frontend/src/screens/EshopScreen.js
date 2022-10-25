@@ -38,9 +38,9 @@ const EshopScreen = ({ match }) => {
       </Row>
       <Row>
         <Col md={10}>
-          <h1>
+          <div className="titleStore">
             <strong>Store</strong>
-          </h1>
+          </div>
         </Col>
         <Col md={2}>
           <i className="fa-brands fa-facebook-f px-2 pt-5 fa-lg size"></i>
