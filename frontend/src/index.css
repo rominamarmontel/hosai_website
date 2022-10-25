@@ -96,6 +96,8 @@ h6 {
       display: none;
   }
 }
+
+/*検索ボックスの虫眼鏡*/
 .d-f_bar {
   display: inline-block; /* なくても大丈夫だけど、念の為 */
   position: relative;    /* 基準値とする */
