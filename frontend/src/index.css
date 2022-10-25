@@ -12,7 +12,6 @@ h1 {
   font-weight: bold;
   font-family: 'MaisonNeueExtendedTRIAL-Bold', sans-serif;
   letter-spacing: -0.01em;
-
   }
 
 /*product name*/
@@ -61,7 +60,7 @@ h5 {
   margin-right: 0;
   font-weight: bold;
   letter-spacing: -0.01em;
-  font-family: ;
+
 }
 
 h6 {
@@ -86,7 +85,7 @@ h6 {
   margin: 0.1rem;
 }
 
-@media (max-width: 900px) {
+/*@media (max-width: 900px) {
   .carousel-caption h2 {
     font-size: 2.5vw;
   }
@@ -95,7 +94,7 @@ h6 {
   .carousel {
       display: none;
   }
-}
+}*/
 
 /*検索ボックスの虫眼鏡*/
 .d-f_bar {

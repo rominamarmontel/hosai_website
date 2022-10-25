@@ -77,9 +77,15 @@ const ProductScreen = ({ history, match }) => {
       ) : (
         <>
           <Meta title={product.name} />
-          <Row>
+          <Row className="productImage">
             <Col md={6}>
-              <Image src={product.image} alt={product.name} fluid />
+              <Image
+                src={product.image}
+                alt={product.name}
+                width="840"
+                height="510"
+                fluid
+              />
             </Col>
             <Col md={3}>
               <ListGroup variant="flush">
