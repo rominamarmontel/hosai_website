@@ -63,7 +63,7 @@ h3 {
     margin-right: 0;
     font-weight: 500;
     letter-spacing: -0.01em;
-    color: #F1575D;
+    color: black;
   }
   .contactMe {
     display: block;
@@ -155,4 +155,13 @@ h6 {
 .d-f_bar input {
   padding: 5px 0 5px 2em; /* アイコンを設置するため左の余白を多めに指定*/
   border-radius: 2rem;
+}
+
+.carousel img{
+  width: 1200px;
+  height: 500px;
+  display: flex;
+}
+.carousel {
+  background-color: white;
 }
