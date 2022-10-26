@@ -6,6 +6,7 @@ import Footer from "./components/Footer";
 import HomeScreen from "./screens/HomeScreen";
 import ProductScreen from "./screens/ProductScreen";
 import TopicScreen from "./screens/TopicScreen";
+import TopicListScreen from "./screens/TopicListScreen";
 import CartScreen from "./screens/CartScreen";
 import LoginScreen from "./screens/LoginScreen";
 import RegisterScreen from "./screens/RegisterScreen";
@@ -53,6 +54,7 @@ const App = () => {
             component={ProductListScreen}
             exact
           />
+          <Route path="/admin/topiclist" component={TopicListScreen} exact />
           <Route path="/admin/product/:id/edit" component={ProductEditScreen} />
           <Route path="/admin/orderlist" component={OrderListScreen} />
           <Route path="/about" component={AboutScreen} />

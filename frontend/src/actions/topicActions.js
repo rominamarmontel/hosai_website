@@ -98,7 +98,7 @@ export const deleteTopic = (id) => async (dispatch, getState) => {
 };
 
 // Create a new Topic
-export const createProduct = () => async (dispatch, getState) => {
+export const createTopic = () => async (dispatch, getState) => {
   try {
     dispatch({
       type: TOPIC_CREATE_REQUEST,
