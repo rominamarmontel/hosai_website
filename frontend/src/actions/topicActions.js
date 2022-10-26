@@ -41,7 +41,7 @@ export const listTopics = () => async (dispatch) => {
 };
 
 // GET a single Topic
-export const getTopicDetails = (id) => async (dispatch, getState) => {
+export const listTopicDetails = (id) => async (dispatch) => {
   try {
     dispatch({
       type: TOPIC_DETAILS_REQUEST,
