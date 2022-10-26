@@ -57,7 +57,7 @@ const TopicListScreen = ({ history, match }) => {
   ]);
 
   const deleteHandler = (id) => {
-    if (window.confirm("Are you sure")) {
+    if (window.confirm("Are you sure???")) {
       dispatch(deleteTopic(id));
     }
   };
