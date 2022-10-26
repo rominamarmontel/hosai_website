@@ -21,10 +21,9 @@ import { logout } from "./userActions";
 // GET all topics
 export const listTopics = () => async (dispatch) => {
   try {
-    dispatch({
-      type: TOPIC_LIST_REQUEST,
-    });
-    const { data } = await axios.get(`/api/topics/`);
+    dispatch({ type: TOPIC_LIST_REQUEST });
+
+    const { data } = await axios.get("/api/topics");
     dispatch({
       type: TOPIC_LIST_SUCCESS,
       payload: data,

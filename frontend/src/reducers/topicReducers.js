@@ -25,7 +25,7 @@ export const topicListReducer = (state = { topics: [] }, action) => {
     case TOPIC_LIST_SUCCESS:
       return {
         loading: false,
-        topics: action.payload.topics,
+        topics: action.payload,
       };
     case TOPIC_LIST_FAIL:
       return { loading: false, error: action.payload };
@@ -34,20 +34,17 @@ export const topicListReducer = (state = { topics: [] }, action) => {
   }
 };
 
-export const topicDetailsReducer = (
-  state = { loading: true, topicItems: [] },
-  action
-) => {
+export const topicDetailsReducer = (state = { topic: {} }, action) => {
   switch (action.type) {
     case TOPIC_DETAILS_REQUEST:
       return {
-        ...state,
         loading: true,
+        ...state,
       };
     case TOPIC_DETAILS_SUCCESS:
       return {
         loading: false,
-        order: action.payload,
+        topic: action.payload,
       };
     case TOPIC_DETAILS_FAIL:
       return {

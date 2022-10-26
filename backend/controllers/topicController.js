@@ -5,7 +5,16 @@ import Topic from "../models/topicModel.js";
 // @route GET /api/topics
 // @access public
 const getTopics = asyncHandler(async (req, res) => {
-  const topics = await Topic.find({});
+  const keyword = req.query.keyword
+    ? {
+        name: {
+          $regex: req.query.keyword,
+          $options: "i",
+        },
+      }
+    : {};
+
+  const topics = await Topic.find({ ...keyword });
   res.json(topics);
 });
 
@@ -14,7 +23,13 @@ const getTopics = asyncHandler(async (req, res) => {
 // @access public
 const getTopicById = asyncHandler(async (req, res) => {
   const topic = await Topic.findById(req.params.id);
-  res.json(topic);
+
+  if (topic) {
+    res.json(topic);
+  } else {
+    res.status(404);
+    throw new Error("Topic not found");
+  }
 });
 
 // @desc Delete single topic

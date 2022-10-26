@@ -23,7 +23,6 @@ const Topic = ({ topic }) => {
             text={`${topic.description} description`}
           />
         </Card.Text>
-
         <Card.Text as="h4">{topic.updateAt}</Card.Text>
       </Card.Body>
     </Card>
