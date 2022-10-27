@@ -46,7 +46,12 @@ const CartScreen = ({ match, location, history }) => {
             <p>Accueil</p>
           </Link>
         </Col>
-        <Col md={11}>
+        <Col md={1}>
+          <Link to="/eshop">
+            <p>Shop</p>
+          </Link>
+        </Col>
+        <Col md={10}>
           <p>
             <strong> Cart</strong>
           </p>

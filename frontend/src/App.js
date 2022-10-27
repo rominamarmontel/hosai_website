@@ -63,7 +63,7 @@ const App = () => {
           <Route path="/estimate" component={EstimateScreen} />
           <Route path="/eshop" component={EshopScreen} />
           <Route path="/contact" component={ContactScreen} />
-          <Route path="/search/:keyword" component={HomeScreen} exact />
+          <Route path="/search/:keyword" component={EshopScreen} exact />
           <Route path="/page/:pageNumber" component={HomeScreen} exact />
           <Route
             path="/search/:keyword/page/:pageNumber"
