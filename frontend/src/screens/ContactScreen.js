@@ -9,25 +9,18 @@ const ContactScreen = () => {
   const sendEmail = (e) => {
     e.preventDefault();
 
-    //const userId = process.env.REACT_APP_USER_ID;
-    //const serviceId = process.env.REACT_APP_SERVICE_ID;
-    //const templateId = process.env.REACT_APP_TEMPLATE_ID;
+    const userId = process.env.REACT_APP_USER_ID;
+    const serviceId = process.env.REACT_APP_SERVICE_ID;
+    const templateId = process.env.REACT_APP_TEMPLATE_ID;
     //e.target = ユーザーがフォームから送信した内容
-    emailjs
-      .sendForm(
-        "service_hx5mb28",
-        "template_jyd5gjs",
-        e.target,
-        "ySJray8WzDPn86KSh"
-      )
-      .then(
-        (result) => {
-          console.log(result.text);
-        },
-        (error) => {
-          console.log(error.text);
-        }
-      );
+    emailjs.sendForm(serviceId, templateId, e.target, userId).then(
+      (result) => {
+        console.log(result.text);
+      },
+      (error) => {
+        console.log(error.text);
+      }
+    );
     e.target.reset();
   };
 
