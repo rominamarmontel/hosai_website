@@ -99,43 +99,60 @@ AMAZON
 
 ## API
 ### Order Controller
->Private
-* /api/orders/myorders ->  GET : USER (Get the page of user's cart)
-* /api/orders ->POST : USER (Create un new order to user's cart)
-* /api/orders/:id -> GET : USER (Get the page of user's order found by product ID)
-* /api/orders/:id/pay -> PUT : USER ( Update the method of payment)
-* /api/orders/:id/deliver -> PUT : USER( Update the shipping address)
+Private
+| Route | API | ACCESS |
+|-----------|-------------|-------------|
+| /api/orders/myorders | GET | USER (Get the page of user's cart) |
+| /api/orders | POST | USER (Create un new order to user's cart) |
+| /api/orders/:id | GET | USER (Get the page of user's order found by product ID) |
+| /api/orders/:id/pay| PUT | USER ( Update the method of payment) |
+| /api/orders/:id/deliver | PUT | USER( Update the shipping address) |
 
->Admin side
-* /api/orders -> GET : Admin (Get the page of all order list)
-* /api/orders/:id/deliver -> PUT : Admin( Update the status of user's after payment )
+Admin side
+| Route | API | ACCESS |
+|-----------|-------------|-------------|
+| /api/orders | GET | Admin (Get the page of all order list) |
+| /api/orders/:id/deliver | PUT | Admin( Update the status of user's after payment ) |
 
 ### Product Controller
->Public side
-* /api/products/ -> GET : USER(Get all products)
-* /api/products/:id -> GET : USER(Get a product founded by product ID)
+Public side
+| Route | API | ACCESS |
+|-----------|-------------|-------------|
+| /api/products/ | GET | USER(Get all products) |
+| /api/products/:id | GET | USER(Get a product founded by product ID) |
 
->Private side
-* /api/products/:id/reviews -> POST : USER (Create a new review)
-* >Admin side
-* /api/products/ -> POST : Admin(Create a new product)
-* /api/products/:id -> PUT : Admin(Update a product founded by product ID)
-* /api/products/:id -> DELETE : Admin(Delete a product founded by product ID)
+Private side
+| Route | API | ACCESS |
+|-----------|-------------|-------------|
+| /api/products/:id/reviews | POST | USER (Get the page of user's cart) |
+
+Admin side
+| Route | API | ACCESS |
+|-----------|-------------|-------------|
+| /api/products/ | POST | Admin(Create a new product) |
+| /api/products/:id | PUT | Admin(Update a product founded by product ID) |
+| /api/products/:id | DELETE | Admin(Delete a product founded by product ID) |
 
 ### User Controller
->Public side
-* /api/users/login ->POST : USERS (Login with an email and a password)
-* /api/users -> POST: USERS (Register a new user)
+Public side
+| Route | API | ACCESS |
+|-----------|-------------|-------------|
+| /api/users/login | POST | USERS (Login with an email and a password) |
+| /api/users | POST | USERS (Register a new user) |
 
 >Private side
-*/api/users/profile -> GET : USERS (Loading page to the user's profile found by user's ID)
-*/api/users/profile -> PUT : USERS (Update the user's profile found by user's ID)
+| Route | API | ACCESS |
+|-----------|-------------|-------------|
+| /api/users/profile | GET | USERS (Loading page to the user's profile found by user's ID) |
+| /api/users/profile | PUT | USERS (Update the user's profile found by user's ID) |
 
->Admin side
-* /api/users/:id ->  GET : Admin (Get an user's profile by user's ID)
-* /api/users -> GET : Admin (Get all users profile)
-* /api/users/:id -> PUT : Admin (Update user's profile)
-* /api/users/:id -> DELETE(delete user found by user's ID)
+Admin side
+| Route | API | ACCESS |
+|-----------|-------------|-------------|
+| /api/users/:id | GET | Admin (Get an user's profile by user's ID) |
+| /api/users | GET | Admin (Get all users profile) |
+| /api/users/:id | PUT | Admin (Update user's profile) |
+| /api/users/:id | DELETE | Admin (delete user found by user's ID) |
 
 
 
