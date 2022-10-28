@@ -86,19 +86,6 @@
     - [Cart System]
     - [Review]
 
-
-
-
-
-## Usage
-
-
-## Contributing
-
-
-## Related projects
-AMAZON
-
 ## API
 ### Order Controller
 Private side
@@ -156,7 +143,17 @@ Admin side
 | /api/users/:id | PUT | Admin (Update user's profile) |
 | /api/users/:id | DELETE | Admin (delete user found by user's ID) |
 
+## Usage
 
+
+## Contributing
+
+
+## Related projects
+AMAZON.com
+ebay.com
+Zalando.com
+Fnac.com
 
 ## Authors
 ### **Hiromi VARNIER**
