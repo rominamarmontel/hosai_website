@@ -38,8 +38,7 @@ Relational Database
 * Many to many relationship for users and rewards
 
 Server / Deployment
-* Nginx / Gunicorn
-* AWS EC2 on Ubuntu 16.04
+* 
 
 ## Installation
 
@@ -127,9 +126,6 @@ Depreciated jobs applied call using old schema, working on phasing out
 
 ## Authors
 ### **Hiromi VARNIER**
-
-
-### **Susan Su**
 
 
 ## Acknowledgements
