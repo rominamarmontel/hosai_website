@@ -150,10 +150,10 @@ Admin side
 
 
 ## Related projects
-AMAZON.com
-ebay.com
-Zalando.com
-Fnac.com
+* AMAZON.com
+* ebay.com
+* Zalando.com
+* Fnac.com
 
 ## Authors
 ### **Hiromi VARNIER**
