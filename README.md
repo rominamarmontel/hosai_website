@@ -60,7 +60,6 @@
 | [bcryptjs] (Back End)| Database Tools,a powerful GUI for querying, aggregating, and analyzing your MongoDB data in a visual environment |
 | [jsonwebtoken] (Back End)| Open standard used to share information between two parties securely — a client and a server |
 | [helmet]| Express middleware functions that set security-related HTTP response headers. Csp sets the Content-Security-Policy header to help prevent cross-site scripting attacks and other cross-site injections (returned by your Express apps)
- |
 
 ### Option
 | Name | Description |
