@@ -99,7 +99,7 @@ AMAZON
 
 ## API
 ### Order Controller
-Private
+Private side
 | Route | API | ACCESS |
 |-----------|-------------|-------------|
 | /api/orders/myorders | GET | USER (Get the page of user's cart) |
@@ -140,7 +140,7 @@ Public side
 | /api/users/login | POST | USERS (Login with an email and a password) |
 | /api/users | POST | USERS (Register a new user) |
 
->Private side
+Private side
 | Route | API | ACCESS |
 |-----------|-------------|-------------|
 | /api/users/profile | GET | USERS (Loading page to the user's profile found by user's ID) |
