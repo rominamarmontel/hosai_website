@@ -15,8 +15,7 @@
 - [API](#api)
 - [Future](#future)
 - [Authors](#authors)
-    - [Christopher Choe](#christopher-choe)
-    - [Susan Su](#susan-su)
+    - 
 - [Acknowledgments](#acknowledgements)
 
 ## Introduction
