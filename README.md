@@ -144,6 +144,20 @@ Admin side
 | /api/users/:id | PUT | Admin (Update user's profile) |
 | /api/users/:id | DELETE | Admin (delete user found by user's ID) |
 
+### Topic Controller
+Public side
+| Route | API | ACCESS |
+|-----------|-------------|-------------|
+| /api/topic | GET | USERS (Get all topics) |
+| /api/topic/:id | GET | USERS (Get a single topic) |
+
+Admin side
+| Route | API | ACCESS |
+|-----------|-------------|-------------|
+| /api/topics/ | POST | Admin(Create a new topic) |
+| /api/topics/:id | PUT | Admin(Update a topic founded by topic ID) |
+| /api/topics/:id | DELETE | Admin(Delete a topic founded by topic ID) |
+
 ## Usage
 
 
