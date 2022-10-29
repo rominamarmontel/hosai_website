@@ -36,7 +36,7 @@ Landing Page : https://rominamarmontel.github.io/
 | fontAwesome| Tool for web production, the web's most popular icon set and toolkit |
 | Redux| Javascript library, a predictable state container designed to help you write JavaScript apps that behave consistently across client, server, and native |
 | axios (Front End) | Javascript library for intercepting HTTP requests and responses and enables client-side protection against XSRF |
-| redux-devtools-extension |  |
+| redux-devtools-extension | Open source project for debugging application's state changes which provides power-ups for your Redux development workflow |
 | React Router DOM | Package that enables you to implement dynamic routing in a web app |
 | React Dom| Package provides DOM-specific methods that can be used at the top level of your app and as an escape hatch to get outside the React model if you need to |
 | React Hook Form| library that helps you validate forms in React. It allows you to register an input or select element and apply validation rules to React Hook Form. Validation rules are all based on the HTML standard and also allow for custom validation methods. |
@@ -53,6 +53,8 @@ Landing Page : https://rominamarmontel.github.io/
 | Nodemon | Tool helps develop Node.js based applications by automatically restarting the node application when file changes in the directory are detected |
 | multer | Node.js middleware for handling multipart/form-data, which is primarily used for uploading files |
 | express-async-handler | Middleware for handling exceptions inside of async express routes and passing them to your express error handlers |
+| Postman | API platform for testing API. It is an HTTP client that tests HTTP requests, utilizing a graphical user interface, through which we obtain different types of responses that need to be subsequently validated |
+| Redux DevTools for Chrome | Debugging application's state changes. The extension provides power-ups for your Redux development workflow |
 
 
 
@@ -70,10 +72,9 @@ Landing Page : https://rominamarmontel.github.io/
 |-----------|-------------|
 | color | JavaScript library for immutable color conversion and manipulation with support for CSS color strings |
 | morgan | Node. js and Express middleware to log HTTP requests and errors, and simplifies the process. It is a function that has access to the request and response lifecycle methods, and the next() method to continue logic in your Express server |
-| emailjs-com |  |
-| carousel |  |
-| PayPal |  |
-| helmet| |
+| emailjs-com | It helps to send emails using client-side technologies only. No server is required – just connect EmailJS to one of the supported email services, create an email template, and use our Javascript library to trigger an email |
+| carousel | Slideshow component for cycling through elements—images or slides of text |
+| PayPal developer sandbox | Self-contained, virtual testing environment that simulates the live PayPal production environment |
 
 
 ### Server / Deployment
