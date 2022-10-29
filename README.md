@@ -35,6 +35,7 @@ Landing Page : https://rominamarmontel.github.io/
 | React-Bootswatch | an open source project |
 | fontAwesome| Tool for web production, the web's most popular icon set and toolkit |
 | Redux| Javascript library, a predictable state container designed to help you write JavaScript apps that behave consistently across client, server, and native |
+| axios (Front End) | Javascript library for intercepting HTTP requests and responses and enables client-side protection against XSRF |
 | redux-devtools-extension |  |
 | React Router DOM | Package that enables you to implement dynamic routing in a web app |
 | React Dom| Package provides DOM-specific methods that can be used at the top level of your app and as an escape hatch to get outside the React model if you need to |
@@ -60,7 +61,6 @@ Landing Page : https://rominamarmontel.github.io/
 |-----------|-------------|
 | .gitignore | a runtime environment, based on Chrome's V8 JavaScript engine (not library, not framework) for using to construct servers |
 | dotenv (Front End & Back End) | Node.js web application framework, It's a layer built on the top of the Node js that helps manage servers and routes |
-| axios (Front End) | Javascript library for intercepting HTTP requests and responses and enables client-side protection against XSRF |
 | bcryptjs (Back End)| Database Tools,a powerful GUI for querying, aggregating, and analyzing your MongoDB data in a visual environment |
 | jsonwebtoken (Back End)| Open standard used to share information between two parties securely — a client and a server |
 | helmet | Express middleware functions that set security-related HTTP response headers. Csp sets the Content-Security-Policy header to help prevent cross-site scripting attacks and other cross-site injections (returned by your Express apps)
