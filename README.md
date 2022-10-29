@@ -34,12 +34,12 @@ Landing Page : https://rominamarmontel.github.io/
 | React-Bootstrap  | CSS frameworks |
 | React-Bootswatch | an open source project |
 | fontAwesome| Tool for web production, the web's most popular icon set and toolkit |
-| axios | Javascript library for intercepting HTTP requests and responses and enables client-side protection against XSRF |
 | Redux| Javascript library, a predictable state container designed to help you write JavaScript apps that behave consistently across client, server, and native |
 | redux-devtools-extension |  |
 | React Router DOM | Package that enables you to implement dynamic routing in a web app |
 | React Dom| Package provides DOM-specific methods that can be used at the top level of your app and as an escape hatch to get outside the React model if you need to |
 | React Hook Form| library that helps you validate forms in React. It allows you to register an input or select element and apply validation rules to React Hook Form. Validation rules are all based on the HTML standard and also allow for custom validation methods. |
+| Redux-thunk (Front End) | It is a middleware which allows us to dispatch actions manually, which gives us the power to incorporate some logic or run some asynchronous code before dispatching an action |
 
 ### Back End
 | Name | Description |
@@ -55,12 +55,12 @@ Landing Page : https://rominamarmontel.github.io/
 
 
 
-### Protection
+### Protection & Security
 | Name | Description |
 |-----------|-------------|
 | .gitignore | a runtime environment, based on Chrome's V8 JavaScript engine (not library, not framework) for using to construct servers |
 | dotenv (Front End & Back End) | Node.js web application framework, It's a layer built on the top of the Node js that helps manage servers and routes |
-| Redux-thunk (Front End) | It is a middleware which allows us to dispatch actions manually, which gives us the power to incorporate some logic or run some asynchronous code before dispatching an action |
+| axios (Front End) | Javascript library for intercepting HTTP requests and responses and enables client-side protection against XSRF |
 | bcryptjs (Back End)| Database Tools,a powerful GUI for querying, aggregating, and analyzing your MongoDB data in a visual environment |
 | jsonwebtoken (Back End)| Open standard used to share information between two parties securely — a client and a server |
 | helmet | Express middleware functions that set security-related HTTP response headers. Csp sets the Content-Security-Policy header to help prevent cross-site scripting attacks and other cross-site injections (returned by your Express apps)
