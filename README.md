@@ -177,7 +177,7 @@ Admin side
 
 
 ## Contributing
-
+Responsive design : affordable access to technology and the convenience of shopping from anywhere, at any time
 
 ## Related projects
 * AMAZON.com
