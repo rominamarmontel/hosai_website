@@ -19,6 +19,8 @@ I have been studying Programming at Holberton School since January of this year,
 Landing Page : https://rominamarmontel.github.io/
 
 About Core Algorithm : 
+![Untitled (2)](https://user-images.githubusercontent.com/69083631/198897451-ab80c07e-2522-468c-b0f6-e45f9a579b28.jpg)
+
 
 
 
