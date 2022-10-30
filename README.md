@@ -21,6 +21,7 @@ I have been studying Programming at Holberton School since January of this year,
 ![Untitled (1)](https://user-images.githubusercontent.com/69083631/198746597-6502dc0d-e842-40c1-956b-bc988ffe9a47.jpg)
 Landing Page : https://rominamarmontel.github.io/
 
+About Core Algorithm : 
 
 
 
@@ -63,7 +64,7 @@ Landing Page : https://rominamarmontel.github.io/
 |-----------|-------------|
 | .gitignore | a runtime environment, based on Chrome's V8 JavaScript engine (not library, not framework) for using to construct servers |
 | dotenv (Front End & Back End) | Node.js web application framework, It's a layer built on the top of the Node js that helps manage servers and routes |
-| bcryptjs (Back End)| Database Tools,a powerful GUI for querying, aggregating, and analyzing your MongoDB data in a visual environment |
+| bcryptjs (Back End)| This module enables storing of passwords as hashed passwords instead of plaintext |
 | jsonwebtoken (Back End)| Open standard used to share information between two parties securely — a client and a server |
 | helmet | Express middleware functions that set security-related HTTP response headers. Csp sets the Content-Security-Policy header to help prevent cross-site scripting attacks and other cross-site injections (returned by your Express apps)
 
@@ -84,11 +85,11 @@ Landing Page : https://rominamarmontel.github.io/
 ![feature_3 copy](https://user-images.githubusercontent.com/69083631/198746843-02699b70-05ce-41c7-9730-ede9b546db57.jpg)
 
 ## Features
-    - [SECURITY]
-    - [Product Search]
-    - [Admin Panel]
-    - [Cart System]
-    - [Review]
+    - [SECURITY] : It protects the transfer of information between the user and the server by encrypting the user's registered password using a hash function and then creating a JWT(Json Web Token) that is used primarily for two purposes: authentication and data transfer.
+    - [Product Search] : You can find just the product you are looking for by entering keywords into a search engine. However, at this time, only one keyword is supported, and we plan to improve this functionality with additional features.
+    - [Admin Panel] : Products and Topics can be edited, deleted, and new ones added from the Admin Panel.
+    - [Cart System] : You can add products to your cart by specifying the quantity you wish to purchase. The inventory count is also automatically updated with sales records, so you can immediately see if an item is available for purchase or not.
+    - [Review]: This option is available only to registered users. Submissions are limited to one per product, and the number of stars is automatically calculated and changed according to the user's rating.
 
 ## API
 ### Order Controller
