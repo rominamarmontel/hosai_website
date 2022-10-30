@@ -185,7 +185,6 @@ Responsive design : affordable access to technology and the convenience of shopp
 * Zalando.com
 * Fnac.com
 
-## Authors
-### **Hiromi VARNIER**
-
-## Licensing
+## Authors & Licensing
+### **Hiromi VARNIER** 
+< 4336@holbertonstudents.com >
