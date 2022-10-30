@@ -13,16 +13,16 @@
 ## Introduction
 I have been studying Programming at Holberton School since January of this year, and about 8 months into my studies, I was assigned the task of creating a portfolio. I had been asked to create a website by a friend who is an art appraiser, so I decided to create a plot type. The desired content was a website that would allow art appraisers to sell his collection and estimate client's collections, plus a page where they could provide and update information about their stores. I chose JavaScript as the language, React, Redux for the front-end, Node.js Express for the back-end, and MongoDB for the database, all libraries and tools that were new to me, but the Rest API and algorithms that I had developed in school were the same, so I was able to use them all. It was a great benefit that I could understand more than I expected. Due to the short production period of three weeks, we were only able to complete the eCommerce and news distribution portions of the project, but we will continue to update the estimates as soon as they are completed.
 
+
+### Technology
 ![Untitled (4)](https://user-images.githubusercontent.com/69083631/198890803-27ea8dc4-abc5-4735-be92-f3df211226f0.jpg)
 
 
-Landing Page : https://rominamarmontel.github.io/
-
-About Core Algorithm : 
+### About Core Algorithm : 
 ![Untitled (2)](https://user-images.githubusercontent.com/69083631/198897451-ab80c07e-2522-468c-b0f6-e45f9a579b28.jpg)
 
 
-
+Landing Page : https://rominamarmontel.github.io/
 
 
 
