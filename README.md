@@ -169,6 +169,8 @@ Admin side
 | /api/topics/:id | DELETE | Admin(Delete a topic founded by topic ID) |
 
 ## Usage
+![Untitled (6)](https://user-images.githubusercontent.com/69083631/198899252-d4188849-a893-449f-bfa0-6ad552de032b.jpg)
+
 ![Customer Touchpoint Map](https://user-images.githubusercontent.com/69083631/198897057-9af808b1-8f06-4fb6-8bad-df798bd6ffc9.jpg)
 
 
