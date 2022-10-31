@@ -15,11 +15,19 @@ I have been studying Programming at Holberton School since January of this year,
 
 
 ### Technology
-![Untitled (4)](https://user-images.githubusercontent.com/69083631/198890803-27ea8dc4-abc5-4735-be92-f3df211226f0.jpg)
+<img width="1429" alt="Screenshot 2022-10-31 at 21 52 31" src="https://user-images.githubusercontent.com/69083631/199108421-e6000e17-098c-46f2-936d-00e639ac125b.png">
+
 
 
 ### About Core Algorithm : 
-![Untitled (2)](https://user-images.githubusercontent.com/69083631/198897451-ab80c07e-2522-468c-b0f6-e45f9a579b28.jpg)
+![Untitled (9)](https://user-images.githubusercontent.com/69083631/199108503-d9c8a2e7-07aa-4a6f-8daa-6d0b9989d07d.jpg)
+
+### ![Untitled (6)](https://user-images.githubusercontent.com/69083631/199108662-898f9082-ed4d-4daf-bae1-d6a5e9a1d7af.jpg)
+
+### ![Untitled (7)](https://user-images.githubusercontent.com/69083631/199108789-432c03c6-ed70-4157-b3ed-f5f287a11715.jpg)
+
+
+
 
 
 Landing Page : https://rominamarmontel.github.io/
@@ -78,10 +86,6 @@ Landing Page : https://rominamarmontel.github.io/
 
 
 ### Server / Deployment
-
-
-## Screenshots
-![feature_3 copy](https://user-images.githubusercontent.com/69083631/198746843-02699b70-05ce-41c7-9730-ede9b546db57.jpg)
 
 ## Features
     - [SECURITY]       : It protects the transfer of information between the user and the server
