@@ -19,16 +19,8 @@ I have been studying Programming at Holberton School since January of this year,
 
 
 
-### About Core Algorithm : 
+### Architecture : 
 ![Untitled (9)](https://user-images.githubusercontent.com/69083631/199108503-d9c8a2e7-07aa-4a6f-8daa-6d0b9989d07d.jpg)
-
-### ![Untitled (6)](https://user-images.githubusercontent.com/69083631/199108662-898f9082-ed4d-4daf-bae1-d6a5e9a1d7af.jpg)
-
-### ![Untitled (7)](https://user-images.githubusercontent.com/69083631/199108789-432c03c6-ed70-4157-b3ed-f5f287a11715.jpg)
-
-
-
-
 
 Landing Page : https://rominamarmontel.github.io/
 
@@ -102,6 +94,8 @@ Landing Page : https://rominamarmontel.github.io/
                         per product, and the number of stars is automatically calculated and changed according to the user's rating.
 
 ## API
+
+### ![Untitled (7)](https://user-images.githubusercontent.com/69083631/199108789-432c03c6-ed70-4157-b3ed-f5f287a11715.jpg)
 ### Order Controller
 Private side
 | Route | API | ACCESS |
