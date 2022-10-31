@@ -19,7 +19,7 @@ I have been studying Programming at Holberton School since January of this year,
 
 
 
-### Architecture : 
+### Architecture 
 ![Untitled (9)](https://user-images.githubusercontent.com/69083631/199108503-d9c8a2e7-07aa-4a6f-8daa-6d0b9989d07d.jpg)
 
 Landing Page : https://rominamarmontel.github.io/
