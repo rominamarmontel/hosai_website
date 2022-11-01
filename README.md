@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # KANRAKU HOSAI
 <img width="1281" alt="Screenshot 2022-10-28 at 15 15 45" src="https://user-images.githubusercontent.com/69083631/198670456-7d232a83-b478-4119-a13d-f1e3bc950e83.png">
 
@@ -186,3 +187,6 @@ Responsive design : affordable access to technology and the convenience of shopp
 ## Authors & Licensing
 ### **Hiromi VARNIER** 
 < 4336@holbertonstudents.com >
+=======
+HOSAI
+>>>>>>> 7f5e0ec (logo image format change)
