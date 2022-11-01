@@ -185,7 +185,4 @@ Responsive design : affordable access to technology and the convenience of shopp
 
 ## Authors & Licensing
 ### **Hiromi VARNIER** 
-< 4336@holbertonstudents.com >
-=======
-HOSAI
->>>>>>> 7f5e0ec (logo image format change)
+<4336@holbertonstudents.com>
