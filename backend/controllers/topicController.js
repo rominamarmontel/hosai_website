@@ -38,12 +38,12 @@ const getTopicById = asyncHandler(async (req, res) => {
 const deleteTopic = asyncHandler(async (req, res) => {
   const topic = await Topic.findById(req.params.id);
 
-  if (product) {
-    await product.remove();
-    res.json({ message: "Product removed" });
+  if (topic) {
+    await topic.remove();
+    res.json({ message: "Topic removed" });
   } else {
     res.status(404);
-    throw new Error("Product not found");
+    throw new Error("Topic not found");
   }
 });
 
@@ -52,10 +52,10 @@ const deleteTopic = asyncHandler(async (req, res) => {
 // @access Private/Admin
 const createTopic = asyncHandler(async (req, res) => {
   const topic = new Topic({
+    user: req.user._id,
     title: "Sample title",
     image: "/images/sample.jpg",
     description: "Sample description",
-    updateAt: "2022/10/22",
   });
   const createdTopic = await topic.save();
   res.status(201).json(createdTopic);

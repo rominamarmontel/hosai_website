@@ -2,6 +2,12 @@ import mongoose from "mongoose";
 
 const topicSchema = mongoose.Schema(
   {
+    user: {
+      //which user create
+      type: mongoose.Schema.Types.ObjectId,
+      required: true,
+      ref: "User",
+    },
     title: {
       type: String,
       required: true,
